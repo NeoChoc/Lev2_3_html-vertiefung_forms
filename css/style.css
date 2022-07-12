@@ -1,0 +1,28 @@
+*{
+   box-sizing: order-box;
+   margin: 0;
+}
+
+p {
+   display: inline;
+}
+
+td {
+   padding: 0.3em;
+}
+
+fieldset {
+   margin: auto;
+   width: 60vw;
+}
+
+input {
+   border: 1px solid rgb(184, 184, 184);
+}
+
+input[type=submit],
+input[type=reset] {
+   background-color: white;
+   border: 1px solid rgb(184, 184, 184);
+   border-radius: 5px;
+}

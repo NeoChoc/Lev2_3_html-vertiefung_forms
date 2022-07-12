@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<title>Lev2_3_css-vertiefung_forms</title>
+	</head>
+	<body>
+		<main>
+			<form id="register-form">
+				<fieldset>
+					<legend>Register form</legend>
+					<table>
+						<tr>
+							<!-- name -->
+							<td>
+								<label for="form_name">Name</label>
+							</td>
+							<td>
+								<input type="text" id="form_name" name="form_name" placeholder="Name" />
+							</td>
+						</tr>
+						<tr>
+							<!-- surname -->
+							<td><label for="form_sname">Surname</label></td>
+							<td><input type="text" id="form_sname" name="form_sname" placeholder="Surnameame" /></td>
+						</tr>
+						<tr>
+							<!-- email -->
+							<td><label for="form_email">Email</label></td>
+							<td><input type="email" id="form_email" name="form_email" placeholder="Email" /></td>
+						</tr>
+						<tr>
+							<!-- gender -->
+							<td><legend>Gender</legend></td>
+							<td>
+								<input type="radio" id="form_gender--male" name="form_gender--male" value="male" />
+								<label for="form_gender--male">Male</label>
+								<input type="radio" id="form_gender--female" name="form_gender--female" value="female" />
+								<label for="form_gender--female">Female</label>
+							</td>
+						</tr>
+						<tr>
+							<!-- picture -->
+							<td><label for="form_file">Picture</label></td>
+							<td><input type="file" id="form_file" name="form_file" accept="image/png, image/jpeg" /></td>
+						</tr>
+						<tr>
+							<!-- country -->
+							<td><label for="form_country">Country</label></td>
+							<td>
+								<select id="form_country" name="form_country" form="register_form">
+									<option value="germany">Germany</option>
+									<option value="spain">Spain</option>
+									<option value="france">France</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<!-- preferred languages -->
+							<td><legend>Preferred languages</legend></td>
+							<td>
+								<select multiple="multiple">
+									<option>HTML</option>
+									<option>Css</option>
+									<option>JS</option>
+									<option>React</option>
+								</select>
+								<p>(To choose more than one use cmd key)</p>
+							</td>
+						</tr>
+						<tr>
+							<!-- field of activity -->
+							<td><label for="form_country">Field of activity</label></td>
+							<td>
+								<input type="checkbox" id="form_field--it" name="form_field--it" value="IT" />
+								<label for="form_field--it">IT</label>
+								<input type="checkbox" id="form_field--design" name="form_field--design" value="design" />
+								<label for="form_field--design">Design</label>
+								<input type="checkbox" id="form_field--other" name="form_field--other" value="other" />
+								<label for="form_field--other">Other</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<!-- submit -->
+								<input class="submit" type="submit" value="Send" onclick="alert('Form submitted!')" />
+								<!-- cancel -->
+								<input class="reset" type="reset" value="Cancel" />
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</main>
+	</body>
+</html>
